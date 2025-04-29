@@ -4,7 +4,7 @@ public class Archer extends Character
 
     public Archer(int x, int y, Character target)
     {
-        super("Archer", x, y, 35, 35, 120, 1, 20, 50, loadTexture("/archer.png"));
+        super("Archer", x, y, 35, 35, 120, 1, 20, 10, loadTexture("/archer.png"));
         this.target = target;
     }
 

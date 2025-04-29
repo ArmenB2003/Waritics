@@ -49,7 +49,9 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener
 
         player = new Warrior(100, 100);
         entities.add(player);
-        player.setWeapon(new Weapons(50, 200));
+        player.setEquipment(new Equipment(0, 200, Equipment.EquipmentType.ARMOR));
+        player.setEquipment(new Equipment(200, 0, Equipment.EquipmentType.WEAPON));
+
 
         int enemyCount = 2 + level;
         for (int i = 0; i < enemyCount; i++) {
